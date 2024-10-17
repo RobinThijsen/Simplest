@@ -8,11 +8,11 @@ class ModalFeature extends Simplest
 {
     public static function open(string $name): void
     {
-        parent::dispatch('open.modal', $name);
+        // TODO dispatch event
     }
 
     public static function close(string $name): void
     {
-        parent::dispatch('close.modal', $name);
+        // TODO dispatch event
     }
 }
