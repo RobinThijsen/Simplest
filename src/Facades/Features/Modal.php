@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplify\Facades\Features;
+namespace Simplest\Facades\Features;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static void open(string $name)
  * @method static void close(string $name)
  *
- * @see \Simplify\Features\ModalFeature
+ * @see \Simplest\Features\ModalFeature
  */
 class Modal extends Facade
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplify\Views\Components;
+namespace Simplest\Views\Components;
 
 use Illuminate\View\Component;
 
@@ -13,6 +13,6 @@ class Modal extends Component
      */
     public function render()
     {
-        return view('simplify::components.modal');
+        return view('simplest::components.modal');
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Simplify;
+namespace Simplest;
 
 use Livewire\Component;
 
-class Simplify extends Component
+class Simplest extends Component
 {
     public function dispatchEvent($event, $name)
     {

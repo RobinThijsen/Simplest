@@ -1,6 +1,6 @@
 <?php
 
-// config for Simplify
+// config for Simplest
 return [
 
 ];

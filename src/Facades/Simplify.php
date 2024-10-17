@@ -1,16 +1,16 @@
 <?php
 
-namespace Simplify\Facades;
+namespace Simplest\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \VendorName\Skeleton\Simplify
+ * @see \VendorName\Skeleton\Simplest
  */
-class Simplify extends Facade
+class Simplest extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \Simplify\Simplify::class;
+        return \Simplest\Simplest::class;
     }
 }

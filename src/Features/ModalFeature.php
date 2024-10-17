@@ -1,10 +1,10 @@
 <?php
 
-namespace Simplify\Features;
+namespace Simplest\Features;
 
-use Simplify\Simplify;
+use Simplest\Simplest;
 
-class ModalFeature extends Simplify
+class ModalFeature extends Simplest
 {
     public static function open(string $name): void
     {

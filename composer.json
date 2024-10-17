@@ -1,12 +1,12 @@
 {
-    "name": "simplify/simplify",
-    "description": "Simplify is a Laravel package that provides a set of tools to simplify your Laravel application. It's a collection of tools working with livewire.",
+    "name": "simplest/simplest",
+    "description": "Simplest is a Laravel package that provides a set of tools to simplest your Laravel application. It's a collection of tools working with livewire.",
     "keywords": [
-        "simplify",
+        "simplest",
         "laravel",
         "livewire"
     ],
-    "homepage": "https://github.com/RobinThijsen/simplify",
+    "homepage": "https://github.com/RobinThijsen/simplest",
     "license": "MIT",
     "authors": [
         {
@@ -36,12 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Simplify\\": "src/"
+            "Simplest\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Simplify\\Tests\\": "tests/",
+            "Simplest\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -73,10 +73,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Simplify\\SimplifyServiceProvider"
+                "Simplest\\SimplestServiceProvider"
             ],
             "aliases": {
-                "Simplify": "Simplify\\Facades\\Simplify"
+                "Simplest": "Simplest\\Facades\\Simplest"
             }
         }
     },
