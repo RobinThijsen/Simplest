@@ -1,5 +1,13 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Simplify;
 
-class Skeleton {}
+use Livewire\Component;
+
+class Simplify extends Component
+{
+    public function dispatchEvent($event, $name)
+    {
+        $this->dispatch($event, name: $name);
+    }
+}

@@ -1,12 +1,14 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Simplify;
 
+use Illuminate\Support\Facades\Blade;
+use Livewire\Livewire;
+use Simplify\Facades\Features\Modal;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class SimplifyServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -15,11 +17,25 @@ class SkeletonServiceProvider extends PackageServiceProvider
          *
          * More info: https://github.com/spatie/laravel-package-tools
          */
-        $package
-            ->name('skeleton')
+        $package->name('simplify')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasAssets()
+            ->hasViews();
+    }
+
+    public function bootingPackage(): void
+    {
+        $this->registerLivewireComponents();
+        $this->registerComponents();
+    }
+
+    private function registerLivewireComponents()
+    {
+        //
+    }
+
+    private function registerComponents(): void
+    {
+        Blade::componentNamespace('Simplify\\Views\\Components', 'simplify');
     }
 }
