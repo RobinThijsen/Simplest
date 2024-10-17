@@ -8,6 +8,11 @@ class Modal extends Component
 {
     public string $name;
 
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
+
     /**
      * @inheritDoc
      */
